@@ -1,0 +1,50 @@
+.user-container{
+    background-color: #E5E5E5;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.user-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.user-profile{
+    border-radius: 123.56px;
+}
+
+.user-name{
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.user-popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media screen and (min-width:1028px){
+    .user-info{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+       margin-left: 35vw;
+    }
+
+    .personal{
+        margin-left: 40px;
+    }
+
+    .user-profile{
+        height: 200px;
+    }
+
+    .user-name{
+        margin-top: 30px;
+    }
+}

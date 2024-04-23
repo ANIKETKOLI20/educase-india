@@ -1,0 +1,131 @@
+.signup-container{
+    text-align: left;
+    background-color: #E5E5E5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.input-container {
+    position: relative;
+    width: 90vw;
+    
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    outline: none;
+    border: 1px solid grey;
+    background: #ffff;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 80vw;
+    height: 30px;
+    transition: all .3s;
+    margin-top: 15px;
+  }
+  
+  label {
+    position: absolute;
+    top: 34px;
+    left: 10px;
+    pointer-events: none; 
+    transition: 0.2s  all; 
+    padding: 0.2px;
+    z-index: 1;
+
+  }
+  
+  label::before {
+    content: "";
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:5px;
+    z-index: -1;
+  }
+
+  input:focus{
+    border: 2px solid gray;
+  }
+  
+  input:focus + label,
+  input:not(:placeholder-shown) + label,
+  .filled{
+    top: 8px; 
+    font-size: 0.8rem; 
+    color: #003180;
+    font-size: 14px;
+    font-weight: 1000;
+    background-color: #E5E5E5;
+    border: none;
+  }
+
+  input::placeholder{
+    font-size: 16px;
+    transition: all .3s;
+    opacity: 0;
+  }
+
+  input:focus::placeholder{
+    opacity: 1;
+    animation-delay: 0.2s;
+  }
+  
+  .span{
+    color: red;
+  }
+
+  .login-button-for-signup{
+    background-color: #4d3259;
+    text-align: center;
+    width: 90vw;
+    height: 50px;
+    border-radius: 10px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+
+  .create-button-signup{
+    background-color: #003180;
+    text-align: center;
+    width: 90vw;
+    height: 50px;
+    border-radius: 10px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 35vh;
+}
+
+
+@media screen and (min-width:1028px) {
+  .signup-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .login-button-for-signup{
+    width: 300px;
+    margin-left: 33vw;
+  }
+
+  .create-button-signup{
+    margin-top: 30px;
+  }
+  
+  
+  
+}
