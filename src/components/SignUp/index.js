@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './index.css';
-import User from '../User'; // Import the User component
+import User from '../User'; 
 
 function SignUp() {
   const [getEmail, setEmail] = useState(true);
@@ -41,12 +41,9 @@ function SignUp() {
 
   const handleSignup = event => {
     event.preventDefault();
-    // You can do something with the form data before redirecting
     history.push('/user');
   };
-
-  const contact = "9850032011";
-
+  
   return (
     <div className='signup-container'>
       <h1>
